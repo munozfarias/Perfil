@@ -1,33 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Presentación</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de vincular el CSS -->
 </head>
 <body>
-    <div class="card">
-        <div class="header">
-            <img src="img/perfil.jpg" alt="Perfil" class="profile-img">
-        </div>
-        <div class="content">
-            <div class="name">Marcelo Muñoz</div>
-            <div class="profession">Desarrollador Full Stack</div>
-            <div class="description">Soy un desarrollador fullstack apasionado por la
-                                    creación de soluciones tecnológicas. Mi enfoque está
-                                    en crear aplicaciones web y móviles que sean funcionales
-                                    y fáciles de usar, siempre buscando optimizar la experiencia
-                                    del usuario. Tengo conocimientos en una variedad de
-                                    tecnologías, tanto para el frontend como el backend, y me gusta
-                                    seguir aprendiendo y mejorando en lo que hago. Mi objetivo
-                                    es colaborar en proyectos que no solo resuelvan problemas,
-                                    sino que también sean sostenibles y eficientes a largo plazo.
-                                    
 
-            </div>
-
-        </div>
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <div class="nav-left">Mi Perfil</div>
+    <div class="nav-right">
+        <a href="#">Inicio</a>
+        <a href="#">Mi perfil</a>
+        <a href="#">Encontrar conexiones</a>
+        <button class="logout">Cerrar sesión</button>
     </div>
+  </div>
+
+  <!-- Contenedor principal con Flexbox -->
+  <div class="profile-layout">
+    <!-- Columna izquierda (contenido principal) -->
+    <div class="left-column">
+      <div class="card">
+        <!-- Header de la tarjeta -->
+        <div class="header">
+          <img src="img/perfil.jpg" alt="Foto de perfil" class="profile-img">
+        </div>
+        
+        <!-- Contenido de la tarjeta -->
+        <div class="content">
+          <div class="name">Marcelo Muñoz</div>
+          <div class="profession">Desarrollador Fullstack, Pelador semi profesional.</div>
+          <div class="city">
+            Ciudad de origen: Santiago, Chile
+          </div>
+          <div class="description">
+            Soy un desarrollador fullstack apasionado por la creación de soluciones tecnológicas. 
+            Mi enfoque está en crear aplicaciones web y móviles que sean funcionales y fáciles de
+            usar, siempre buscando optimizar la experiencia del usuario. Tengo conocimientos en una 
+            variedad de tecnologías, tanto para el frontend como el backend, y me gusta seguir aprendiendo
+            y mejorando en lo que hago. Mi objetivo es colaborar en proyectos que no solo resuelvan 
+            problemas, sino que también sean sostenibles y eficientes a largo plazo. Como atleta de 
+            alto rendimiento tengo facultades psicológicas que me permitenn ver los problemas con perspectiva y perseverncia.
+            
+          </div>
+         </div>
+      </div>
+      
+      <!-- Sección de educación -->
+      <div class="education">
+        <h2>Educación</h2>
+        <div class="education-description">
+          <p>Tecnológica metropolitana: Ingenieria Civil en Computación (3 años).</p> 
+          <p> Bootcamp desarrollo Full Stack por parte de Skillnest y Fundación Forge</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha (barra lateral) -->
+    <div class="right-column">
+      <!-- Bloque de solicitudes actuales -->
+      <div class="connections-requests">
+        <h2>Solicitudes de Conexión</h2>
+        <div class="connection-request">
+          <img src="img/Guy-Debord.jpg" alt="Perfil solicitud 1">
+          <div class="user-info">
+            <div>Guy Debord</div>
+            <div>Desarrollador Web</div>
+          </div>
+          <div class="action-buttons">
+            <button class="accept">✓</button>
+            <button class="reject">✗</button>
+          </div>
+        </div>
+        <div class="connection-request">
+          <img src="img/Vaneigem.jpg" alt="Perfil solicitud 2">
+          <div class="user-info">
+            <div>Raoul Vaneigem</div>
+            <div>Diseñador Gráfico</div>
+          </div>
+          <div class="action-buttons">
+            <button class="accept">✓</button>
+            <button class="reject">✗</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bloque de conexiones existentes -->
+      <div class="connections-list">
+        <h2>Tus Conecciones</h2>
+        <div class="connection">
+          <img src="img/constant-nieuwenhuijs.jpg" alt="Perfil conexión 1">
+          <div class="user-info">
+            <div>Constant Nieuwenhuys</div>
+            <div>Desarrollador Backend</div>
+          </div>
+        </div>
+        <div class="connection">
+          <img src="img/asger.jpg" alt="Perfil conexión 2">
+          <div class="user-info">
+            <div>Asger Jorn</div>
+            <div>Product Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
