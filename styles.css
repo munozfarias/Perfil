@@ -124,7 +124,19 @@
     color: gray;
     margin-bottom: 1rem;
   }
-  
+  .edit-profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00aaff;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
   .description {
     font-size: 1.2rem;
     color: #555;
